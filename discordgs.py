@@ -1,7 +1,7 @@
 from discord import app_commands
 import discord
 
-token="MTM5NzAzNzE2OTg2MzgxOTI4NA.GlHRnj.If78pYo4vcVP7fJhYIi41Mtc5aMOFQ9rUFreeo"
+token="token dc"
 tokenapi="degsganas"
 BOT_CHANNEL=1397502885373415424
 
