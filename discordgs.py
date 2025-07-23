@@ -2,7 +2,7 @@ from discord import app_commands
 import discord
 
 token="token dc"
-tokenapi="degsganas"
+tokenapi="api token"
 BOT_CHANNEL=1397502885373415424
 
 isRunning=False
