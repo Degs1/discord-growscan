@@ -52,7 +52,7 @@ def format_item_response(response, world):
 
     message = f"""**Result from {world}**
 
-**<:gem:1397515362224050267> Floating Item :**
+**- Floating Item :**
 {floating}
 
 **<:wldegs:1397515288714678333> World Item :**
@@ -81,7 +81,7 @@ async def fetch_data_command(interaction: discord.Interaction, world: str):
         # await asyncio.sleep(4)
         await interaction.edit_original_response(content=f"warping to **{world}** please wait.")
         respon = await fetch_data(f"http://45.115.224.103:5000/bot/degsgs?world={world}&token={tokenapi}")
-        
+        isRunning = False
         if isinstance(respon,dict) and "status" in respon:
             await interaction.edit_original_response(content=respon["message"])
         elif isinstance(respon,list):
